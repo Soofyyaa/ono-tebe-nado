@@ -2,7 +2,7 @@ body {
     box-sizing: border-box;
 }
 
-header {
+.header {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
@@ -20,13 +20,15 @@ header {
 }
 
 .header__links-list-item {
-    margin-right: 10px;
-    margin-left: 23px;
+    margin-right: 33px;
 }
 
 .header__links-list-item_no-bullit {
-    margin-right: 10px;
     list-style: none;
+}
+
+.header__link_active {
+    text-decoration: none;
 }
 
 .header__logo {
@@ -38,15 +40,15 @@ header {
     height: 105px;
 }
 
-address {
+.address {
     font-style: normal;
     line-height: 1.35;
     text-underline-offset: 4px;
 }
 
-.header__address__block {
+.header__address {
     justify-self: end;
-    padding-left: 363px;
+    padding-left: 361px;
 }
 
 .header__address {
@@ -163,7 +165,7 @@ h2 {
     justify-content: space-around;
     gap: 25px;
     margin-top: 27px;
-    padding-bottom: 25px;
+    padding-bottom: 30px;
     list-style: none;
 }
 
@@ -194,12 +196,12 @@ h2 {
 
 .card__title {
     position: relative;
-    padding: 50px 40px;
+    margin: 50px 40px 0 40px;
     color: #FFF;
     font-family: Raleway;
     font-weight: 700;
     font-size: 22px;
-    line-height: 1.3;
+    line-height: 1.2;
     text-decoration: underline;
     text-underline-offset: 4px;
     text-transform: uppercase;
@@ -263,7 +265,7 @@ h2 {
 
 .about__title {
     margin-top: 108px;
-    margin-bottom: 100px;
+    margin-bottom: 93px;
 }
 
 .about__text {
@@ -274,19 +276,19 @@ h2 {
     font-size: 20px;
 }
 
-footer {
+.about__text__last {
+    margin-bottom: 0;
+}
+
+.footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     min-width: 1440px;
     padding: 90px 50px;
 }
 
-.footer__address__block {
-    display: block;
-    padding-right: 200px;
-}
-
 .footer__address {
+    padding-right: 200px;
     font-weight: 400;
     font-size: 18px;
     list-style: none;
@@ -304,11 +306,16 @@ footer {
     list-style: none;
 }
 
+.footer__menu-link_active {
+    text-decoration: none;
+}
+
 .footer__social-list {
     display: flex;
     justify-content: flex-end;
     list-style: none;
 }
+
 .footer__social-list-item {
     width: 48px;
     height: 48px;
