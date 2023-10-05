@@ -51,10 +51,6 @@ body {
     padding-left: 361px;
 }
 
-.header__address {
-    list-style: none;
-}
-
 .cover {
     position: relative;
     z-index: -1;
