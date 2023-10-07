@@ -132,10 +132,10 @@ body {
 
 .bet-button {
     flex-shrink: 0;
-    width: 257px;
-    height: 52px;
+    min-width: 257px;
     margin-right: 50px;
     border: 1px solid #FFF;
+    padding: 12px 32px;
     color: #FFF;
     font-weight: 400;
     font-size: 22px;
@@ -319,7 +319,7 @@ h2 {
 .footer__social-list {
     display: flex;
     justify-content: flex-end;
-    gap: 51px;
+    gap: 48px;
     list-style: none;
 }
 
